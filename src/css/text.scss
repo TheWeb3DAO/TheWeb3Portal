@@ -68,7 +68,7 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.line-2, .line-3, .line-5 {
+.line-2, .line-3, .line-4, .line-5 {
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -76,4 +76,5 @@ body {
   -webkit-box-orient: vertical;
 }
 .line-3 { -webkit-line-clamp: 3; }
+.line-4 { -webkit-line-clamp: 4; }
 .line-5 { -webkit-line-clamp: 5; }

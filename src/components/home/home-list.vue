@@ -47,7 +47,14 @@
               <h3 class="mt-3 fz-15">
                 <a :href="it.link" target="_blank">{{ it.title }}</a>
               </h3>
-              <div class="mt-1 fz-13 gray-3 line-3" style="min-height: 60px">
+              <div
+                class="mt-1 fz-12 gray-3"
+                :class="{
+                  'line-4': !it.moreDesc,
+                }"
+                @click="$set(it, 'moreDesc', !it.moreDesc)"
+                style="min-height: 48px"
+              >
                 {{ it.desc }}
               </div>
               <div class="mt-2 link-wrap">
